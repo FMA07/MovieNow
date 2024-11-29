@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def catalogo(request):
     context={}
-    return render(request, 'pages/catalogo.html')
+    return render(request, 'pages/catalogo.html', context)
