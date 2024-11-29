@@ -1,0 +1,53 @@
+#banner{
+    color: white;
+}
+
+#btnBanner{
+    width: 150px;
+    border: none;
+    color:white;
+    border-radius: 10px;
+}
+
+#cardPrincipal{
+    background-color: #3d6cab;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+}
+
+#cardCatalogo{
+    text-align: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    background-color: #08264e;
+    margin-bottom: 5%;
+
+}
+
+.div{
+    display: flex;
+}
+
+#linkPelicula{
+    text-decoration: none;
+    color:white
+}
+
+#imgCatalogo{
+    height: 90%;
+    width: 90%;
+    max-height: 500px;
+    max-width: 400px;
+}
+
+.input{
+    height: 30px;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+}
+

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,17 +25,17 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/elPadrinoLarge.jpg')">
-                        <img src="../assets/elPadrinoWide.jpg" alt="" style="height: 200px; width: 100%;">
+                        <img src="{% static 'assets/elPadrinoWide.jpg' %}" alt="" style="height: 200px; width: 100%;">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/fridayThe13th.jpg')">
-                        <img src="../assets/fridayThe13thWide.jpg" alt="" style="height: 200px; width: 100%;">
+                        <img src="{% static 'assets/fridayThe13thWide.jpg' %}" alt="" style="height: 200px; width: 100%;">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/The-Super-Mario-Bros.-Movie-poster.jpg')">
-                        <img src="../assets/MarioWide.jpg" alt="" style="height: 200px; width: 100%;">
+                        <img src="{% static 'assets/MarioWide.jpg' %}" alt="" style="height: 200px; width: 100%;">
                     </a>
                 </div>
             </div>
@@ -51,13 +52,13 @@
             <div class="col-lg-4">
                 <div class="card" id="cardCatalogo">
                     <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/elPadrinoLarge.jpg')">
-                        <img src="../assets/elPadrinoLarge.jpg" alt="" id="imgCatalogo">
+                        <img src="{% static 'assets/elPadrinoLarge.jpg' %}" alt="" id="imgCatalogo">
                     </a>
                     <a href="../Pages/reserva.html" id="linkPelicula">El Padrino Parte 1</a>
                 </div>
                 <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/venom.jpeg')">
                     <a href="../Pages/reserva.html">
-                        <img src="../assets/venom.jpeg" alt="" id="imgCatalogo">
+                        <img src="{% static 'assets/venom.jpeg' %}" alt="" id="imgCatalogo">
                     </a>
                     <a href="../Pages/reserva.html" id="linkPelicula">Venom</a>
                 </div>
@@ -65,13 +66,13 @@
             <div class="col-lg-4">
                 <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/fridayThe13th.jpg')">
                     <a href="../Pages/reserva.html">
-                        <img src="../assets/fridayThe13th.jpg" alt="" id="imgCatalogo">
+                        <img src="{% static 'assets/fridayThe13th.jpg' %}" alt="" id="imgCatalogo">
                     </a>
                     <a href="../Pages/reserva.html" id="linkPelicula">Friday the 13th</a>
                 </div>
                 <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/alien.jpg')">
                     <a href="../Pages/reserva.html">
-                        <img src="../assets/alien.jpg" alt="" id="imgCatalogo">
+                        <img src="{% static 'assets/alien.jpg' %}" alt="" id="imgCatalogo">
                     </a>
                     <a href="../Pages/reserva.html" id="linkPelicula">Alien</a>
                 </div>
@@ -79,13 +80,13 @@
             <div class="col-lg-4">
                 <div class="card" id="cardCatalogo">
                     <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/The-Super-Mario-Bros.-Movie-poster.jpg')">
-                        <img src="../assets/The-Super-Mario-Bros.-Movie-poster.jpg" alt="" id="imgCatalogo">
+                        <img src="{% static 'assets/The-Super-Mario-Bros.-Movie-poster.jpg' %}" alt="" id="imgCatalogo">
                     </a>
                     <a href="../Pages/reserva.html" id="linkPelicula">Super Mario</a>
                 </div>
                 <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/xmenApocalypse.jpg')">
                     <a href="../Pages/reserva.html">
-                        <img src="../assets/xmenApocalypse.jpg" alt="" id="imgCatalogo">
+                        <img src="{% static 'assets/xmenApocalypse.jpg' %}" alt="" id="imgCatalogo">
                     </a>
                     <a href="../Pages/reserva.html" id="linkPelicula">X Men Apocalipsis</a>
                 </div>
