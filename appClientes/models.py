@@ -1,4 +1,5 @@
 from django.db import models
+from pagWeb.models import Pelicula
 
 # Create your models here.
 
@@ -18,3 +19,8 @@ class Cliente(models.Model):
 
     def __str__(self):
         return f'{self.usuario} | Email: {self.email_cli}'
+    
+class Reserva(models.Model):
+    id_reserva  = models.AutoField(primary_key=True, null=False, unique=True)
+    cod_pelicula= models.ForeignKey(Pelicula, on_delete=models.CASCADE)
+    cli_asociado= models.OneToOneField(Cliente, on_delete=models.CASCADE)
