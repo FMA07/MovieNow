@@ -1,3 +1,3 @@
-function guardarImagen(imageUrl) {
-    localStorage.setItem('imagenSeleccionada', imageUrl)
+function guardarImagen(id) {
+    localStorage.setItem('peliculaSeleccionada', id)
 }

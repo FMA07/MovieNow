@@ -9,6 +9,7 @@ class Pelicula(models.Model):
     reparto         = models.CharField(max_length=200)
     descripcion     = models.CharField(max_length=200)
     disponibilidad  = models.BooleanField(null=False)
+    img_pelicula    = models.ImageField(upload_to="media", null=True)
 
     def __str__(self):
         return f'Cod: {self.cod_pelicula} | Título: {self.titulo}'

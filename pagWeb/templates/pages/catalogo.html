@@ -43,48 +43,18 @@
               </button>            
         </div>
         <div class="row">
+            {% for p in peliculas %}
             <div class="col-lg-4">
+                {% if p.disponibilidad %}
                 <div class="card" id="cardCatalogo">
-                    <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/elPadrinoLarge.jpg')">
-                        <img src="{% static 'assets/elPadrinoLarge.jpg' %}" alt="" id="imgCatalogo">
+                    <a href="{% url 'reservar' p.id %}">
+                        <img src="{{p.img_pelicula.url}}" alt="" id="imgCatalogo">
                     </a>
-                    <a href="../Pages/reserva.html" id="linkPelicula">El Padrino Parte 1</a>
+                    <a href="{% url 'reservar' p.id %}" id="linkPelicula">{{p.titulo}}</a>
                 </div>
-                <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/venom.jpeg')">
-                    <a href="../Pages/reserva.html">
-                        <img src="{% static 'assets/venom.jpeg' %}" alt="" id="imgCatalogo">
-                    </a>
-                    <a href="../Pages/reserva.html" id="linkPelicula">Venom</a>
-                </div>
+                {% endif %}
             </div>
-            <div class="col-lg-4">
-                <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/fridayThe13th.jpg')">
-                    <a href="../Pages/reserva.html">
-                        <img src="{% static 'assets/fridayThe13th.jpg' %}" alt="" id="imgCatalogo">
-                    </a>
-                    <a href="../Pages/reserva.html" id="linkPelicula">Friday the 13th</a>
-                </div>
-                <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/alien.jpg')">
-                    <a href="../Pages/reserva.html">
-                        <img src="{% static 'assets/alien.jpg' %}" alt="" id="imgCatalogo">
-                    </a>
-                    <a href="../Pages/reserva.html" id="linkPelicula">Alien</a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card" id="cardCatalogo">
-                    <a href="../Pages/reserva.html" onclick="guardarImagen('../assets/The-Super-Mario-Bros.-Movie-poster.jpg')">
-                        <img src="{% static 'assets/The-Super-Mario-Bros.-Movie-poster.jpg' %}" alt="" id="imgCatalogo">
-                    </a>
-                    <a href="../Pages/reserva.html" id="linkPelicula">Super Mario</a>
-                </div>
-                <div class="card" id="cardCatalogo" onclick="guardarImagen('../assets/xmenApocalypse.jpg')">
-                    <a href="../Pages/reserva.html">
-                        <img src="{% static 'assets/xmenApocalypse.jpg' %}" alt="" id="imgCatalogo">
-                    </a>
-                    <a href="../Pages/reserva.html" id="linkPelicula">X Men Apocalipsis</a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </body>
