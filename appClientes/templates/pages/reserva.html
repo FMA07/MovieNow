@@ -6,9 +6,29 @@
     
 
     <div class="card" id="cardPrincipal" style="text-align: center;">
-        <button id="btnBanner"  style="background-color: #ffffff; align-self: center; margin: 5px;" > <a href="catalogo.html"> retroceder </a></button>
-        <div class="card" id="peliReserva" style="width: 400px; height: 600px; margin: 15px;">
-            <img src="{{pelicula.img_pelicula.url}}" alt="">
+        <button id="btnBanner"  style="background-color: #0d3367; align-self: center; margin: 5px;" >
+             <a href="{% url 'catalogo' %}"> Retroceder </a>
+        </button>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{{pelicula.img_pelicula.url}}" alt="" style="width: 400px; height: 600px; margin: 15px;">
+            </div>
+            <div class="col-lg-8" style="margin-top: 1%;" id="desc">
+                <h1>{{pelicula.titulo}}</h1>
+                <br>
+                {{pelicula.descripcion}}
+                <br>
+                <br>
+                <h3>Director(es): </h3>
+                {{pelicula.director}}
+                <br>
+                <br>
+                <h3>Reparto: </h3>
+                {{pelicula.reparto}}
+                <br>
+                <br>
+                <button id="btnBanner" style="margin: 5px; background-color: #696969">Reservar</button>
+            </div>
         </div>
     </div>
 </body>
